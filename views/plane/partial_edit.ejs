@@ -1,0 +1,24 @@
+<!-- main  -->
+<div class=row>
+    <div class="col col-xs-12">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" value="<%= plane.tailNumber %>" required>
+      </div>
+      <div class="form-group">
+        <label for="breed">Number of Seats</label>
+        <input type="text" class="form-control" id="numSeats" name="numSeats" value="<%= plane.numSeats %>">
+      </div>
+      <div class="form-group">
+        <label for="fuelCapacity">Fuel Capacity</label>
+        <input onchange="onFuelCapacityChange()" type="number" class="form-control" id="fuelCapacity" name="fuelCapacity" value="<%= plane.fuelCapacity %>" required>
+      </div>
+    </div>
+  </div>
+  <hr>
+  
+  <br/>
+  <hr>
+  <br/>
+  <br/>
+  

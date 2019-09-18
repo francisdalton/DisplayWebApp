@@ -1,0 +1,39 @@
+[
+    {
+        "_id":1,
+        "name":"Delta Airlines",
+        "startingPoint":"Tampa",
+        "endingPoint":"Denver",
+        "durationHours": 1500,
+        "pilotId": "DA268752",
+        "planeId": "DA 1"
+    },
+    {
+        "_id":2,
+        "name":"Frontier Airlines",
+        "startingPoint":"St. Louis",
+        "endingPoint":"Fresno",
+        "durationHours": 6000,
+        "pilotId": "FA839234",
+        "planeId": "FA 2"
+    },
+    {
+        "_id":3,
+        "name":"American Airlines",
+        "startingPoint":"Houston",
+        "endingPoint":"Cleveland",
+        "durationHours": 0,
+        "pilotId": "AA837201",
+        "planeId": "AA 3"
+       
+    },
+    {
+        "_id":4,
+        "name":"Southwest Airlines",
+        "startingPoint":"Austin",
+        "endingPoint":"Boston",
+        "durationHours": 50,
+        "pilotId": "SA948532",
+        "planeId": "SA 4"
+    }
+]

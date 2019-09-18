@@ -1,0 +1,30 @@
+[
+    {
+      "_id": 1,
+      "lastName": "Francis",
+      "firstName": "Dylan",
+      "hoursFlown": 0,
+      "isCurrent": false
+    },
+    {
+        "_id": 2,
+        "lastName": "Dylan",
+        "firstName": "Bob",
+        "hoursFlown": 1500,
+        "isCurrent": true
+    },
+    {
+        "_id": 3,
+        "lastName": "Snider",
+        "firstName": "Taylor",
+        "hoursFlown": 6000,
+        "isCurrent": true
+    },
+    {
+        "_id": 4,
+        "lastName": "Hyde",
+        "firstName": "Samuel",
+        "hoursFlown": 50,
+        "isCurrent": false
+    }
+]

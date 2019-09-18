@@ -1,0 +1,33 @@
+[
+    {
+        "_id": 1,
+        "tailNumber": "A00001",
+        "numSeats": 90,
+        "fuelCapacity": 65
+    },
+    {
+        "_id": 2,
+        "tailNumber": "B00052",
+        "numSeats": 28,
+        "fuelCapacity": 45
+    },
+    {
+        "_id": 3,
+        "tailNumber": "G43130",
+        "numSeats": 12,
+        "fuelCapacity": 51
+    },
+    {
+        "_id": 4,
+        "tailNumber": "T01010",
+
+        "fuelCapacity": 100
+    },
+    {
+        "_id": 5,
+        "tailNumber": "K99012",
+        "numSeats": 15,
+        "fuelCapacity": 50
+    }
+
+]

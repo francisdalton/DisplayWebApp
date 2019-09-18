@@ -1,0 +1,23 @@
+<br/>
+<br/>
+<h2>Confirm deletion of plane</h2>
+<br/>
+<br/> ID:
+<%=  plane._id %>
+  <br> Name:
+  <%=plane.tailNumber%>
+    <br/> Number of Seats:
+    <%=plane.numSeats%>
+      <br/> Fuel Capacity (Gallons):
+      <%=plane.fuelCapacity%>
+        <br/>
+        <br/>
+
+            <form method="get" action="/plane">
+              <input type="submit" value="Return to list" class="btn btn-caution" />
+            </form>
+
+            <br/>
+            <form method="POST" action="/plane/delete/<%= plane._id %>">
+              <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+            </form>

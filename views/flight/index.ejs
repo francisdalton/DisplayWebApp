@@ -1,0 +1,44 @@
+<br/>
+<br/>
+<div class="container-fluid">
+    <div class="col col-md-12">
+      <a href="flight/create" class="btn btn-primary new">
+        Create a new flight
+      </a>
+      <h2>Recent flight entries</h2>
+      <p>There are
+        <%= flights.query.length %> flights.
+          <br/>
+      </p>
+      <% for (var i = flights.query.length-1; i >= 0; i--) {   
+        flight = flights.query[i];   %>
+        <div class="panel panel-default">
+          <div class="panel-heading"></div>
+          <div class="text-muted pull-right"></div>
+          <div class="panel-body">
+            ID:
+            <%=  flight._id %>
+              <br> Name:
+              <%=flight.name%>
+              <br/> Starting Point:
+              <%=flight.startingPoint%>
+                <br/> Ending Point:
+                <%=flight.endingPoint%>
+                  <br/> Duration (Hours):
+                  <%=flight.durationHours%>
+                    <br/> Pilot ID:
+                    <%=flight.pilotId%>
+                      <br/> Plane ID:
+                      <%=flight.planeId%>
+                    <br/>
+                    <br/>
+                          <a href="/flight/delete/<%= flight._id  %>" class="btn btn-danger"> Delete </a>
+                          <a href="/flight/details/<%= flight._id %>" class="btn btn-info"> Details </a>
+                          <a href="/flight/edit/<%= flight._id %>" class="btn btn-warning"> Edit </a>
+          </div>
+        </div>
+        <% } %>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<br/>
+<br/>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="plane/create" class="btn btn-primary new">
+        Create a new plane
+      </a>
+      <h2>Recent plane entries</h2>
+      <p>There are
+        <%= planes.query.length %> planes.
+          <br/>
+      </p>
+      <% for (var i = planes.query.length-1; i >= 0; i--) {   
+        plane = planes.query[i];   %>
+        <div class="panel panel-default">
+          <div class="panel-heading"></div>
+          <div class="text-muted pull-right"></div>
+          <div class="panel-body">
+            ID:
+            <%=  plane._id %>
+              <br> Name:
+              <%=plane.tailNumber%>
+                <br/> Number of Seats:
+                <%=plane.numSeats%>
+                  <br/> Fuel Capacity (Gallons):
+                  <%=plane.fuelCapacity%>
+                    <br/>
+                    <br/>
+                      <a href="/plane/delete/<%= plane._id  %>" class="btn btn-danger"> Delete </a>
+                      <a href="/plane/details/<%= plane._id %>" class="btn btn-info"> Details </a>
+                      <a href="/plane/edit/<%= plane._id %>" class="btn btn-warning"> Edit </a>
+          </div>
+        </div>
+        <% } %>
+
+    </div>
+  </div>
+</div>

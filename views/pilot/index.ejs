@@ -1,0 +1,42 @@
+<br/>
+<br/>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="pilot/create" class="btn btn-primary new">
+        Create a new pilot
+      </a>
+      <h2>Recent pilot entries</h2>
+      <p>There are
+        <%= pilots.query.length %> pilots.
+          <br/>
+      </p>
+      <% for (var i = pilots.query.length-1; i >= 0; i--) {   
+        pilot = pilots.query[i];   %>
+        <div class="panel panel-default">
+          <div class="panel-heading"></div>
+          <div class="text-muted pull-right"></div>
+          <div class="panel-body">
+            ID:
+            <%=  pilot._id %>
+              <br> First Name:
+              <%=pilot.firstName%>
+                <br/> Last Name:
+                <%=pilot.lastName%>
+                  <br/> Hours Flown:
+                  <%=pilot.hoursFlown%>
+                    <br/> Is Current:
+                    <%=pilot.isCurrent%>
+                    <br/>
+                          <br/>
+                          <br/>
+                          <a href="/pilot/delete/<%= pilot._id  %>" class="btn btn-danger"> Delete </a>
+                          <a href="/pilot/details/<%= pilot._id %>" class="btn btn-info"> Details </a>
+                          <a href="/pilot/edit/<%= pilot._id %>" class="btn btn-warning"> Edit </a>
+          </div>
+        </div>
+        <% } %>
+
+    </div>
+  </div>
+</div>
